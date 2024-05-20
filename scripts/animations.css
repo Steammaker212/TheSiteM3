@@ -1,0 +1,14 @@
+/* animations.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.repair-info, .repair-option, .track-progress-button, .tracking-section {
+    animation: fadeIn 1s ease-in-out;
+}

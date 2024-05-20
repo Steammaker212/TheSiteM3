@@ -1,0 +1,379 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner img {
+    max-width: 100%;
+    height: 50%;
+    object-fit: cover; /* added to maintain aspect ratio */
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ff4500;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu-icon img,
+.cart-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+}
+
+.menu-icon img {
+    left: 10px;
+    top: 35%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.cart-icon img {
+    right: 10px;
+    cursor: pointer;
+}
+
+.menu-icon img:hover,
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+/* New Header Bar */
+.new-header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.new-header nav ul li a {
+    font-size: 14px;
+}
+
+.new-header nav ul li {
+    margin-right: 15px;
+}
+
+.new-header nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: pop 0.3s ease;
+}
+
+.login-icon {
+    float: right;
+    margin-right: 70px;
+    cursor: pointer;
+    margin-top: -30px;
+}
+
+.login-icon img {
+    width: 38px;
+    height: 38px;
+    margin-top: 8%;
+    margin-right: 20px;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2 {
+    color: #ff4500;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInUp 0.5s ease;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    margin-top: 10px;
+}
+.services-list {
+    float: left; /* Float the services list to the left */
+    width: calc(80% - 20px); /* Adjust width as needed */
+}
+
+.service-video {
+    float: right; /* Float the video to the right */
+    width: 320px; /* Adjust width as needed */
+    margin-left: 20px; /* Add some space between the text and video */
+    margin-top: -135px; /* Raise the video further upward */
+    position: relative; /* Ensure positioning context */
+    clear: right; /* Ensure it clears the floated elements */
+}
+
+#repair-services {
+    overflow: hidden; /* Ensure content doesn't stick outside the section */
+}
+
+/* Button Styles */
+button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff4500;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+footer::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ff4500;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social Buttons Styles */
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-buttons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Menu Styles */
+/* Menu Icon Styles */
+.menu-icon {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    z-index: 1001; /* Ensure it appears above other content */
+}
+
+.menu-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Menu Styles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -290px; /* Hide the menu by default */
+    width: 290px; /* Adjust width */
+    height: 100%;
+    background-color: #333;
+    padding-top: 120px; /* Remove the negative padding */
+    transition: left 0.3s ease; /* Add transition effect */
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Tab */
+.menu-tab {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px; /* Adjust width */
+    height: 50px;
+    background-color
+    : #333;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.menu-tab:hover .menu-icon img {
+    transform: scale(1.1);
+}
+
+.menu-tab:hover .menu {
+    left: 0;
+}
+
+.menu-tab .menu-icon img {
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-tab .menu {
+    position: fixed;
+    top: 0;
+    left: -290px; /* Hide the menu by default */
+    width: 290px; /* Adjust width */
+    height: 100%;
+    background-color: #333;
+    padding-top: 120px; /* Remove the negative padding */
+    transition: left 0.3s ease; /* Add transition effect */
+    z-index: 1000;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Hide text and links in header ul */
+    header {
+        height: 35px;
+    }
+    .hhh li {
+        display: none;
+    }
+
+    /* Show only login and cart icon */
+    .login-icon,
+    .cart-icon {
+        display: block;
+    }
+    .login-icon{
+        margin-top: 8px;
+    }
+    
+
+    /* Move service video below the text and list */
+    .service-video {
+        margin-top: 20px;
+        margin-right: -10%;
+        padding-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Style for smaller devices */
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .new-header nav ul li a {
+        font-size: 12px;
+    }
+}

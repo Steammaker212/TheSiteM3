@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(300deg, #f8f8f8, #ff0000);
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repair-info {
+    text-align: center;
+    margin: 30px ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.repair-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.repair-option {
+    flex: 0 1 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.repair-option:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repair-option h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.repair-option p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ship-device-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ship-device-button:hover {
+    background-color: #e63e00;
+}
+
+.track-progress-button {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.track-progress-button:hover {
+    background-color: #005bb5;
+}
+
+.tracking-section {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff4f;
+    border-top: 1px solid #000000;
+}
+
+.tracking-section h2 {
+    margin-bottom: 20px;
+}
+
+.tracking-section form {
+    margin-bottom: 20px;
+}
+
+.tracking-section form label {
+    margin-right: 10px;
+}
+
+.tracking-section form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tracking-section form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tracking-section form button:hover {
+    background-color: #005bb5;
+}
+
+.tracking-result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .social-buttons {
+    margin-top: 10px;
+}
+
+footer .social-buttons a {
+    margin: 0 10px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Gaming Mouse",
+    "description": "High-performance gaming mouse with customizable RGB lighting.",
+    "price": 49.99,
+    "image": "images/gaming_ mouse.jpeg"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "description": "Mechanical keyboard with tactile switches for ultimate gaming experience.",
+    "price": 89.99,
+    "image": "images/mechanical_keyboard.jpg"
+  },
+  {
+    "name": "Gaming Headset",
+    "description": "Immersive gaming headset with noise-cancelling microphone.",
+    "price": 69.99,
+    "image": "images/gaming_headset.jpg"
+  }
+]

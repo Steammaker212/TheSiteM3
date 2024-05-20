@@ -1,0 +1,31 @@
+[
+    {
+      "name": "3D Modeling Software Suite",
+      "image": "images/3D Modeling Software Suite.png",
+      "description": "A comprehensive suite of 3D modeling software for professionals and enthusiasts.",
+      "price": 199.99,
+      "link": "modeling_software.html"
+    },
+    {
+      "name": "3D Printing Filament Pack",
+      "image": "filament_pack.jpg",
+      "description": "A variety pack of high-quality 3D printing filaments in different colors and materials.",
+      "price": 49.99,
+      "link": "filament_pack.html"
+    },
+    {
+      "name": "3D Modeling Masterclass Course",
+      "image": "masterclass_course.jpg",
+      "description": "An online masterclass course taught by industry experts covering advanced 3D modeling techniques.",
+      "price": 149.99,
+      "link": "masterclass_course.html"
+    },
+    {
+      "name": "3D Printed Figurine Collection",
+      "image": "figurine_collection.jpg",
+      "description": "A collection of intricately designed and professionally 3D printed figurines.",
+      "price": 79.99,
+      "link": "figurine_collection.html"
+    }
+  ]
+  

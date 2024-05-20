@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="scripts/register.css">
+    <script src="scripts/register.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Create Your Account</h2>
+        <form action="script/register.php" method="post" id="register-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <div class="error" id="username-error">Please enter a valid username.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="email-error">Please enter a valid email.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error" id="password-error">Please enter a strong password.</div>
+                <button type="button" id="toggle-password">Show</button>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+        <p>Or sign up with:</p>
+        <div class="social-login">
+            <button class="social-btn google-btn">Login with Google <img src="gmail.png" alt="Gmail"></button>
+            <button class="social-btn facebook-btn">Login with Facebook<img src="facebook.jpg" alt="Facebook"</button>
+        </div>
+    </div>
+</body>
+
+</html>

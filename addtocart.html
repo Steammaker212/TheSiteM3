@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="scripts/addtocart.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="online-shop.html">Online Shop</a></li>
+                <li><a href="3d-modeling-shop.html">3D Modeling Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p class="total-price" id="total-price"></p>
+        <p class="total-items" id="total-items"></p> <!-- New element for total items -->
+        <div class="buttons">
+            <a href="#" class="back-button">Back to Shopping</a>
+            <button class="buy-all-button">Buy All</button>
+        </div>
+    </div>
+
+    <script src="scripts/addtocart.js"></script>
+</body>
+</html>
